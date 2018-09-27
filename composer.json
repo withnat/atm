@@ -1,32 +1,19 @@
 {
-	"name": "Webster/vandar",
+	"name": "Nat/vandar",
 	"description": "Vanda is a content management platform.",
 	"type": "project",
 	"license": "Vanda license",
 	"authors": [
 		{
-			"name": "Vanda Team",
-			"email": "contact@vanda.io"
+			"name": "Nat Withe",
+			"email": "nat@withnat.com"
 		}
 	],
 	"config": {
 		"vendor-dir": "system/vendor"
 	},
-	"repositories": {
-		"symfony": {
-		"type": "package",
-		"package": {
-			"name": "symfony/symfony1",
-			"version": "1.4",
-			"dist": {
-				"url": "https://github.com/symfony/symfony1/zipball/1.4",
-				"type": "zip"
-			}
-		}
-	}
-	},
 	"require": {
-		"php": ">=5.6.0",
+		"php": ">=7.0.0",
 		"phpmailer/phpmailer": "~5.2",
 		"phpoffice/phpexcel": "~1.8",
 		"box/spout": "~2.5",
