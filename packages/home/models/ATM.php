@@ -53,7 +53,7 @@ class ATM extends System\Mvc\Model
 		$balance = static::getBalance();
 		
 		if ($withdrawAmount > $balance)
-			return 'Insufficient funds.';
+			return ['danger', 'Insufficient funds.'];
 
 		$leftAmount = $withdrawAmount;
 		$availableBanknote = static::_getAvailableBanknote();
