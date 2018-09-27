@@ -1,6 +1,7 @@
 # atm
 
 PHP7.x
+MySQL 5.4.x
 
 Config:
  - .htaccess
