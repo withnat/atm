@@ -7,7 +7,7 @@
 
 **Installation**
 
-Edit the following files
+Create database and import atm.sql file (in the same directory as the current readme file) then edit the following files.
  - .htaccess for base path
  - config.php for database connection
 
