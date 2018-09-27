@@ -1,0 +1,1 @@
+<?php //a:4:{s:6:"Config";s:50:"/home/me/www/atm/packages/config/models/Config.php";s:3:"ATM";s:45:"/home/me/www/atm/packages/home/models/ATM.php";s:4:"User";s:46:"/home/me/www/atm/packages/user/models/User.php";s:9:"UserGroup";s:51:"/home/me/www/atm/packages/user/models/UserGroup.php";}

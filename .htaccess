@@ -1,0 +1,24 @@
+Options -Indexes
+ErrorDocument 403 /atm/
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /atm/
+
+	# รอให้โครงสร้างไฟล์ของ project เรียบร้อยค่อยมากำหนดใหม่
+	#RewriteRule ^(packages|tmp)/(.*)$ index.php [NC,L]
+
+	# subdir/filename.ext
+	RewriteRule \/(.*)\.(sql|yaml)$ index.php [NC,L]
+
+	# subdir/index.htm or /index.html
+	RewriteRule \/index\.html?$ index.php  [NC,L]
+
+	# subdir/*.php
+	RewriteRule \/.*\.php$ index.php  [NC,L]
+
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
