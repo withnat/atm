@@ -2,8 +2,8 @@
 
 **System Requirements**
 
-- PHP7.x
- - MySQL 5.4.x
+- PHP 7.x
+ - MySQL 5.7.x
 
 **Installation**
 
