@@ -32,7 +32,7 @@ class HomeController extends Controller
 		Session::checkToken();
 
 		$data = Request::post();
-		$result = ATM::pay($data->amount);
+		$result = ATM::proceed($data->amount);
 
 		if ($result[0] == 'danger')
 			Flash::danger($result[1]);

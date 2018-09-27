@@ -46,8 +46,10 @@ class ATM extends System\Mvc\Model
 		return $banknotes;
 	}
 
-	public static function pay($withdrawAmount)
+	public static function proceed($withdrawAmount)
 	{
+		$withdrawAmount = abs((int)$withdrawAmount);
+
 		//echo 'ถอน = '.$withdrawAmount.'<br /><br />';
 
 		$balance = static::getBalance();
@@ -111,7 +113,7 @@ class ATM extends System\Mvc\Model
 			}
 
 			$msg = 'You get ฿' . number_format($withdrawAmount) . '<br /><br />';
-			$msg .= 'ATM dipensed...<br />';
+			$msg .= 'ATM dispensed...<br />';
 			$msg .= '<ul>';
 
 			foreach ($paidBanknote as $key => $value)

@@ -39,6 +39,7 @@ use System\Request;
 					</div>
 				</div>
 				-->
+				<!--
 				<div class="hr-line-dashed"></div>
 				<div class="form-group">
 					<label class="col-lg-2 control-label required"><?=t(' Default List Limit')?></label>
@@ -46,6 +47,8 @@ use System\Request;
 						<?=Form::select('Config.pagesize', $this->pagesizeOptions)?>
 					</div>
 				</div>
+				-->
+				<!--
 				<div class="hr-line-dashed"></div>
 				<div class="form-group">
 					<label class="col-lg-2 control-label"><?=t('Search Engine Friendly URLs')?></label>
@@ -53,6 +56,7 @@ use System\Request;
 						<?=Form::boolean('Config.sef')?>
 					</div>
 				</div>
+				-->
 				<div class="hr-line-dashed"></div>
 				<div class="form-group">
 					<label class="col-lg-2 control-label required"><?=t('URL Base Path')?></label>
@@ -76,6 +80,7 @@ use System\Request;
 					</div>
 				</div>
 				-->
+				<!--
 				<div class="hr-line-dashed"></div>
 				<div class="form-group">
 					<label class="col-lg-2 control-label required"><?=t('Session Life Time')?></label>
@@ -84,6 +89,7 @@ use System\Request;
 						<div style="float:left; margin-top:8px; padding-left:5px;">minutes</div>
 					</div>
 				</div>
+				-->
 			</div>
 		</div>
 	</div>

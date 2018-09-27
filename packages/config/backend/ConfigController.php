@@ -53,6 +53,9 @@ class ConfigController extends Controller
 			if ($key == 'backendpath')
 				$value = Uri::slugify($value);
 
+			if (in_array($key, ['bn20', 'bn50', 'bn100', 'bn500', 'bn1000']))
+				$value = abs((int)$value);
+
 			$data = ['value' => $value];
 
 			DB::table('Config')->where('key', $key)->update($data);
