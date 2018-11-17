@@ -12,6 +12,6 @@ Create database and import atm.sql file (in the same directory as the current re
  - config.php for database connection
 
 Make directory /tmp writable using the following command
-  - sudo chmod -R 777 tmp
+  - sudo chmod -R 755 tmp
 
-See online demo at http://withnat.com/atm.
+See online demo at http://withnat.com/atm
